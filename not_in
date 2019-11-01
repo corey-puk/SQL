@@ -1,0 +1,9 @@
+#utilise the 'world' db
+
+#retrieve the countries that have surface area greater than x
+select name
+from country
+where name
+not in (select surfacearea
+from country
+where surfacearea > 500000);
